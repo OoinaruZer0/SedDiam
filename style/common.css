@@ -1,7 +1,12 @@
 body {
   border: 30px solid #fff;
   font-family: 'Work Sans', sans-serif;
-  padding-top: 107.5px;
+}
+
+@media (max-width: 768px) {
+  body {
+    border: 20px solid #fff;
+  }
 }
 
 p {
@@ -19,17 +24,66 @@ p {
   padding-left: 0;
 }
 
-.logo {
-  max-width: 194px;
-  width: 100%;
+.header-box {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-list-group {
+    max-width: 700px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-list {
+    border-top: 1px solid #f0f0f0;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-margin-top {
+    margin-top: 20px;
+  }
 }
 
 .display-1 {
   font-weight: 100;
 }
 
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 40px;
+  }
+}
+
 .pagetitle-description {
-  padding: 45px 0 120px 0;
+  padding: 170px 0 120px;
+}
+
+@media (max-width: 768px) {
+  .pagetitle-description {
+    padding-top: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .blackbackground {
@@ -63,36 +117,7 @@ h2 {
           flex-direction: row;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    border: 20px solid #fff;
-  }
-  .logo {
-    max-width: 220px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .header-list-group {
-    max-width: 700px;
-    width: 100%;
-  }
-  .header-list {
-    border-top: 1px solid #f0f0f0;
-    max-width: 700px;
-    width: 100%;
-    padding: 20px 0;
-  }
-  .list-margin-top {
-    margin-top: 20px;
-  }
-  .display-1 {
-    font-size: 40px;
-  }
-  .navbar {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+@media (max-width: 768px) {
   i {
     font-size: 40px;
   }

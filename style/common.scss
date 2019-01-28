@@ -1,9 +1,23 @@
-// 全てのページに共通のSCSS開始
+// 変数の定義開始
+$tab: 768px;
+// 変数の定義終了
 
+// mixin開始
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+// mixin終了
+
+// 全てのページに共通のSCSS開始
 body {
   border: 30px solid #fff;
   font-family: 'Work Sans', sans-serif;
-  padding-top: 107.5px;
+
+  @include tab {
+    border: 20px solid #fff;
+  }
 }
 
 p {
@@ -19,24 +33,68 @@ p {
     padding-left: 0; }
 
 // ヘッダーのSCSS開始
-.logo {
-  max-width: 194px;
-  width: 100%;
+.header-box {
+  background-color: #fff;
 }
+
+.logo {
+  @include tab {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.header-list-group {
+  @include tab {
+  max-width: 700px;
+  width: 100%;  
+  }
+}
+
+.header-list {
+  @include tab {
+  border-top: 1px solid #f0f0f0;
+  max-width: 700px;
+  width: 100%;
+  padding: 20px 0;  
+  }
+}
+
+.list-margin-top {
+  @include tab {
+  margin-top: 20px;  
+  }
+}
+
 // ヘッダーのSCSS終了
 
 // ページタイトルとテキストのSCSS開始
 .display-1 {
   font-weight: 100;
+
+  @include tab {
+    font-size: 40px;
+  }
 }
 
 .pagetitle-description {
-  padding: 45px 0 120px 0;
+  padding: 170px 0 120px;
+
+  @include tab {
+    padding-top: 240px;
+  }
 }
 
 // ページタイトルとテキストのSCSS終了
 
 // フッターのSCSS開始
+.navbar {
+  @include tab {
+  justify-content: center;  
+  }
+}
+
 .blackbackground {
   background-color: #282828;
 }
@@ -64,46 +122,11 @@ p {
   .navbar-nav {
     flex-direction: row;
   }
-// フッターのSCSS終了
-// メディアクエリ開始
-@media screen and (max-width: 768px) {
-  body {
-    border: 20px solid #fff;
-  }
-
-  .logo {
-    max-width: 220px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .header-list-group {
-    max-width: 700px;
-    width: 100%;
-  }
-
-  .header-list {
-    border-top: 1px solid #f0f0f0;
-    max-width: 700px;
-    width: 100%;
-    padding: 20px 0;
-  }
-
-  .list-margin-top {
-    margin-top: 20px;
-  }
-
-  .display-1 {
-    font-size: 40px;
-  }
-
-  .navbar {
-    justify-content: center;
-  }
 
   i {
-    font-size: 40px;
+    @include tab {
+    font-size: 40px;  
+    }
   }
-}
-  // メディアクエリ終了
+// フッターのSCSS終了
 // 全てのページに共通のSCSS終了
