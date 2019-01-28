@@ -1,0 +1,39 @@
+// 変数の定義開始
+$tab: 768px;
+// 変数の定義終了
+
+// mixin開始
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+// mixin終了
+
+// 社内のイメージ紹介開始
+.room-info {
+  background-color: #F8F7F7;
+  padding: 50px 0;
+}
+
+.room-info-width {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.team-image {
+  border-radius: 70px;
+}
+
+// 社内のイメージ紹介終了
+
+// 社員紹介開始
+.member-title-description-box {
+  margin: 120px 0 50px;
+
+  @include tab {
+    margin: 60px 0 25px;
+  }
+}
+// 社員紹介終了

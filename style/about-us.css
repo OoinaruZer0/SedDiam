@@ -1,0 +1,25 @@
+.room-info {
+  background-color: #F8F7F7;
+  padding: 50px 0;
+}
+
+.room-info-width {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.team-image {
+  border-radius: 70px;
+}
+
+.member-title-description-box {
+  margin: 120px 0 50px;
+}
+
+@media (max-width: 768px) {
+  .member-title-description-box {
+    margin: 60px 0 25px;
+  }
+}
+/*# sourceMappingURL=about-us.css.map */

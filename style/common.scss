@@ -24,6 +24,13 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
+.txts {
+  margin-bottom: 0;
+}
+
+.under-line {
+  background: linear-gradient(transparent 60%, #e1a577 60%);
+}
 .no-gutters {
   margin-right: 0;
   margin-left: 0; }
@@ -79,7 +86,7 @@ p {
 }
 
 .pagetitle-description {
-  padding: 170px 0 120px;
+  padding: 170px 0 70px;
 
   @include tab {
     padding-top: 240px;

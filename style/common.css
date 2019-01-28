@@ -13,6 +13,15 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
+.txts {
+  margin-bottom: 0;
+}
+
+.under-line {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #e1a577));
+  background: linear-gradient(transparent 60%, #e1a577 60%);
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -69,7 +78,7 @@ p {
 }
 
 .pagetitle-description {
-  padding: 170px 0 120px;
+  padding: 170px 0 70px;
 }
 
 @media (max-width: 768px) {
