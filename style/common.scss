@@ -1,9 +1,109 @@
-// 全てのページに共通のCSS開始
+// 全てのページに共通のSCSS開始
 
 body {
   border: 30px solid #fff;
+  font-family: 'Work Sans', sans-serif;
+  padding-top: 107.5px;
 }
 
 p {
   -webkit-font-smoothing: antialiased;
 }
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+
+// ヘッダーのSCSS開始
+.logo {
+  max-width: 194px;
+  width: 100%;
+}
+// ヘッダーのSCSS終了
+
+// ページタイトルとテキストのSCSS開始
+.display-1 {
+  font-weight: 100;
+}
+
+.pagetitle-description {
+  padding: 45px 0 120px 0;
+}
+
+// ページタイトルとテキストのSCSS終了
+
+// フッターのSCSS開始
+.blackbackground {
+  background-color: #282828;
+}
+
+.social-icon-color {
+  color: #777;
+}
+
+.information {
+  color: #fff;
+  padding: 56px 20px;
+  border-bottom: 1px solid #696969;
+}
+
+  .information-width {
+    max-width: 71rem;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+  }
+// フッターのSCSS終了
+// メディアクエリ開始
+@media screen and (max-width: 768px) {
+  body {
+    border: 20px solid #fff;
+  }
+
+  .logo {
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header-list-group {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .header-list {
+    border-top: 1px solid #f0f0f0;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .list-margin-top {
+    margin-top: 20px;
+  }
+
+  .display-1 {
+    font-size: 40px;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  i {
+    font-size: 40px;
+  }
+}
+  // メディアクエリ終了
+// 全てのページに共通のSCSS終了
