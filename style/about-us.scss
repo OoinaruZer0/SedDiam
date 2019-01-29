@@ -36,4 +36,34 @@ $tab: 768px;
     margin: 60px 0 25px;
   }
 }
+
+.member-images-list {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider {
+  padding-left: 0;
+}
+
+.slider img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.social-icon a i {
+  font-size: 30px;
+  color: #c9c9c9;
+
+  @include tab {
+    font-size: 50px;
+  }
+}
+
+h4 {
+  margin-top: 10px;
+}
 // 社員紹介終了
