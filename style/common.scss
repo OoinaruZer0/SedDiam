@@ -52,7 +52,7 @@ p {
   }
 }
 
-.header-list-group {
+.hd-list-group {
   @include tab {
   max-width: 700px;
   width: 100%;  
@@ -74,6 +74,10 @@ p {
   }
 }
 
+.navbar {
+  padding: 0;
+}
+
 // ヘッダーのSCSS終了
 
 // ページタイトルとテキストのSCSS開始
@@ -89,7 +93,7 @@ p {
   padding: 170px 0 70px;
 
   @include tab {
-    padding-top: 240px;
+    padding-top: 150px;
   }
 }
 
