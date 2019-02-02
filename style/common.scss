@@ -29,6 +29,7 @@ body {
 
 p {
   -webkit-font-smoothing: antialiased;
+  margin-bottom: 0;
 }
 
 .txts {
@@ -66,7 +67,7 @@ p {
 }
 
 .header-list {
-  @include sp {
+  @include tab {
   border-top: 1px solid #f0f0f0;
   max-width: 700px;
   width: 100%;

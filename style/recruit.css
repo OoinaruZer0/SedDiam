@@ -15,4 +15,76 @@
   background-color: #fff;
   color: #333333;
 }
+
+@media (max-width: 768px) {
+  .brsp {
+    display: none;
+  }
+}
+
+.status-box-container {
+  overflow: hidden;
+}
+
+.status-box-row {
+  display: block;
+  clear: both;
+}
+
+.status-box-col {
+  text-align: center;
+  border: 2px solid #c0c0c0;
+  width: 32%;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .status-box-col {
+    float: none;
+    width: 100%;
+  }
+}
+
+.status-box-col:nth-of-type(2) {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+@media (max-width: 768px) {
+  .status-box-col:nth-of-type(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.unit {
+  text-align: right;
+}
+
+.tonelight {
+  color: #d0d0d0;
+}
+
+.salary-box {
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+}
+
+h4.status-box-heading {
+  font-size: 40px;
+}
+
+.txtl {
+  font-size: 50px;
+}
+
+.txtm {
+  font-size: 30px;
+}
+
+.txts {
+  letter-spacing: 2.5px;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=recruit.css.map */
