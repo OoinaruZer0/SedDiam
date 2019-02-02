@@ -1,10 +1,17 @@
 // 変数の定義開始
 $tab: 768px;
+$sp: 576px;
 // 変数の定義終了
 
 // mixin開始
 @mixin tab {
   @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
     @content;
   }
 }
@@ -44,11 +51,10 @@ p {
   background-color: #fff;
 }
 
-.logo {
+.hdlogo {
   @include tab {
-    max-width: 350px;
+    max-width: 200px;
     width: 100%;
-    margin: 0 auto;
   }
 }
 
@@ -60,7 +66,7 @@ p {
 }
 
 .header-list {
-  @include tab {
+  @include sp {
   border-top: 1px solid #f0f0f0;
   max-width: 700px;
   width: 100%;
@@ -93,7 +99,11 @@ p {
   padding: 170px 0 70px;
 
   @include tab {
-    padding-top: 150px;
+    padding-top: 100px;
+  }
+
+  @include sp {
+    padding: 70px 0 30px;
   }
 }
 
