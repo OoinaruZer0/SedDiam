@@ -1,0 +1,66 @@
+// 変数の定義開始
+$tab: 768px;
+$sp: 576px;
+// 変数の定義終了
+
+// mixin開始
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+// mixin終了
+
+// オフィスイメージとコンタクトのための情報開始
+.contact-image {
+  background-size: cover;
+  background-position: center;
+
+  @include tab {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+.contact-info {
+    padding: 40px 70px;
+    background: #282828;
+}
+// オフィスイメージとコンタクトのための情報終了
+
+// 入力フォーム開始
+
+.txtform {
+  margin: 50px 0;
+
+  @include tab {
+    margin: 30px 0;
+  }
+}
+
+.form-group {
+  max-width: 70%;
+  margin: 0 auto;
+
+  @include tab {
+    max-width: 90%;
+  }
+}
+
+.btn {
+  color: #fff;
+
+  &:hover {
+    color: #ffc107;
+    border: 2px solid #ffc107;
+    background-color: #fff;
+  }
+}
+
+// 入力フォーム終了

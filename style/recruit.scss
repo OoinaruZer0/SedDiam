@@ -1,0 +1,17 @@
+.ap-info-box {
+  background-color: #F8F7F7;
+}
+
+.ap-info-btn {
+  border: 1px solid #333333;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #666666;
+  cursor: pointer;
+  padding: 20px 40px;
+
+  &:hover {
+    background-color: #fff;
+    color: #333333;
+  }
+}
