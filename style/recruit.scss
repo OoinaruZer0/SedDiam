@@ -44,6 +44,14 @@ $sp: 576px;
     }
   }
 
+  h3.crhtxt {
+    font-size: 60px;
+
+    @include tab {
+      font-size: 30px;
+    }
+  }
+
   .status-box-container {
     overflow: hidden;
   }
@@ -78,6 +86,9 @@ $sp: 576px;
 
   .unit {
     text-align: right;
+    font-family: 'Old Standard TT', serif;
+    font-size: 30px;
+    font-weight: 700;
   }
 
   .tonelight {
@@ -87,14 +98,20 @@ $sp: 576px;
   .salary-box {
     border: 2px solid #c0c0c0;
     border-radius: 10px;
+    background-color: #e4965a;
+    color: #fff;
   }
 
   h4.status-box-heading {
     font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    color: #6c757d;
   }
 
   .txtl {
-    font-size: 50px;
+    font-size: 60px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
   }
 
   .txtm {
@@ -102,8 +119,27 @@ $sp: 576px;
   }
 
   .txts {
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     font-size: 20px;
     margin-bottom: 1rem;
+  }
+
+  .d-mark {
+    font-size: 40px;
+  }
+
+  .ap-btn {
+    border: 3px solid #e4965a;
+    padding: 20px 90px;
+    background-color: #e4965a;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+
+    &:hover {
+      background-color: #fff;
+      color: #e4965a;
+    }
   }
 // 申し込む雇用形態の選択ボックス終了
