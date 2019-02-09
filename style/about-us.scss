@@ -1,10 +1,23 @@
 // 変数の定義開始
 $tab: 768px;
+$ssp: 400px;
 // 変数の定義終了
 
 // mixin開始
 @mixin tab {
   @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin ssp {
+  @media (max-width: ($ssp)) {
     @content;
   }
 }
@@ -42,6 +55,18 @@ $tab: 768px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+h3.our-team-heading {
+  font-size: 60px;
+
+  @include tab {
+    font-size: 40px;
+  }
+
+  @include ssp {
+    font-size: 30px;
+  }
 }
 
 .slider {

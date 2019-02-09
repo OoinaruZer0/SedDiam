@@ -57,7 +57,7 @@
 <div class="container-fluid member-title-description-box">
     <div class="row text-muted member-title-description">
       <div class="col-12">
-        <h3 class="text-center display-4">- Our Team -</h3>
+        <h3 class="text-center our-team-heading">- Our Team -</h3>
         <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
         <p class="text-center">nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
       </div>
@@ -133,6 +133,16 @@
       slidesToScroll: 1,
       // ブレイクポイント設定
       responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            arrows: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
         {
           breakpoint: 768,
           settings: {

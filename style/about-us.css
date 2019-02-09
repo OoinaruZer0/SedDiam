@@ -30,6 +30,22 @@
   text-align: center;
 }
 
+h3.our-team-heading {
+  font-size: 60px;
+}
+
+@media (max-width: 768px) {
+  h3.our-team-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  h3.our-team-heading {
+    font-size: 30px;
+  }
+}
+
 .slider {
   padding-left: 0;
 }
