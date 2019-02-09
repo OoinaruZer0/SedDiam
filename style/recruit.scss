@@ -1,9 +1,45 @@
 // 変数の定義開始
-$tab: 768px;
+$bpc: 1600px;
+$pc: 1400px;
+$mpc: 1200px;
+$spc: 1000px;
+$sspc: 800px;
+$tab: 767px;
 $sp: 576px;
 // 変数の定義終了
 
 // mixin開始
+
+@mixin bpc {
+  @media (max-width: ($bpc)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin mpc {
+  @media (max-width: ($mpc)) {
+    @content;
+  }
+}
+
+@mixin spc {
+  @media (max-width: ($spc)) {
+    @content;
+  }
+}
+
+@mixin sspc {
+  @media (max-width: ($sspc)) {
+    @content;
+  }
+}
+
 @mixin tab {
   @media (max-width: ($tab)) {
     @content;
@@ -20,6 +56,72 @@ $sp: 576px;
 // 応募を検討するに当たって有益な情報へのリンク開始
 .ap-info-box {
   background-color: #F8F7F7;
+  padding: 3%;
+
+  @include bpc {
+    padding: 2%;
+  }
+
+  @include tab {
+    padding: 5%;
+  }
+}
+
+.ap-info-heading {
+  margin: 6%;
+  
+  @include bpc {
+    margin: 5%;
+  }
+
+  @include pc {
+    margin: 4%;
+  }
+
+  @include mpc {
+    margin: 7%;
+  }
+
+  @include spc {
+    margin: 5%;
+  }
+
+  @include sspc {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+
+  @include tab {
+    margin: 6%;
+  }
+}
+
+.ap-info-txt {
+  margin: 8%;
+
+  @include bpc {
+    margin: 6%;
+  }
+
+  @include pc {
+    margin: 4%;
+  }
+
+  @include mpc {
+    margin: 8%;
+  }
+
+  @include spc {
+    margin: 5%;
+  }
+
+  @include sspc {
+    margin: 3%;
+  }
+
+  @include tab {
+    margin: 6%;
+  }
 }
 
 .ap-info-btn {
@@ -30,6 +132,14 @@ $sp: 576px;
   cursor: pointer;
   width: 150px;
   height: 60px;
+
+  @include spc {
+    height: 50px;
+  }
+
+  @include tab {
+    height: 60px;
+  }
 
   &:hover {
     background-color: #fff;

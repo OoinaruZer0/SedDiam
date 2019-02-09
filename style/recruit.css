@@ -1,5 +1,99 @@
 .ap-info-box {
   background-color: #F8F7F7;
+  padding: 3%;
+}
+
+@media (max-width: 1600px) {
+  .ap-info-box {
+    padding: 2%;
+  }
+}
+
+@media (max-width: 767px) {
+  .ap-info-box {
+    padding: 5%;
+  }
+}
+
+.ap-info-heading {
+  margin: 6%;
+}
+
+@media (max-width: 1600px) {
+  .ap-info-heading {
+    margin: 5%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .ap-info-heading {
+    margin: 4%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ap-info-heading {
+    margin: 7%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ap-info-heading {
+    margin: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .ap-info-heading {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+}
+
+@media (max-width: 767px) {
+  .ap-info-heading {
+    margin: 6%;
+  }
+}
+
+.ap-info-txt {
+  margin: 8%;
+}
+
+@media (max-width: 1600px) {
+  .ap-info-txt {
+    margin: 6%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .ap-info-txt {
+    margin: 4%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ap-info-txt {
+    margin: 8%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ap-info-txt {
+    margin: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .ap-info-txt {
+    margin: 3%;
+  }
+}
+
+@media (max-width: 767px) {
+  .ap-info-txt {
+    margin: 6%;
+  }
 }
 
 .ap-info-btn {
@@ -12,12 +106,24 @@
   height: 60px;
 }
 
+@media (max-width: 1000px) {
+  .ap-info-btn {
+    height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ap-info-btn {
+    height: 60px;
+  }
+}
+
 .ap-info-btn:hover {
   background-color: #fff;
   color: #333333;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .brsp {
     display: none;
   }
@@ -27,7 +133,7 @@ h3.crhtxt {
   font-size: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   h3.crhtxt {
     font-size: 30px;
   }
@@ -49,7 +155,7 @@ h3.crhtxt {
   float: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .status-box-col {
     float: none;
     width: 100%;
@@ -61,7 +167,7 @@ h3.crhtxt {
   margin-right: 1.5%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .status-box-col:nth-of-type(2) {
     margin-left: 0;
     margin-right: 0;
