@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sed Diam</title>
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/contact.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400" rel="stylesheet">
+</head>
+<body>
+<!-- ヘッダー読み込み -->
+<div id="header"></div>
+<!-- ヘッダー読み込み終了 -->
+
+<!-- ページタイトルと簡単なページ説明開始 -->
+<div class="container-fluid">
+    <div class="row text-muted pagetitle-description">
+      <div class="col-12">
+        <h1 class="text-center display-1">Contact</h1>
+        <p class="text-center">Proin egestas pellentesque nulla, ac lacinia diam fermentum nec. Aenean tincidunt porttitor magna quis lobortis. Morbi dictum neque id magna vehicula dignissim.</p>
+        <p class="text-center">Curabitur dictum suscipit felis ut dapibus. Pellentesque sed arcu risus. Sed a dignissim purus, venenatis porttitor augue.</p>
+      </div>
+    </div>
+  </div>
+<!-- ページタイトルと簡単なページ説明終了 -->
+
+<!-- オフィスイメージとコンタクトのための情報開始 -->
+<div>
+    <div class="row text-muted no-gutters">
+      <div class="col-12 col-md-6 contact-image d-none d-md-block" style="background-image:url(img/contact.jpg);"></div>
+      <div class="col-12 col-md-6 contact-info mt-3 mt-md-0">
+        <p class="text-center"><i class="fas fa-map-marker-alt"></i></p>
+        <h2 class="text-center">Company Address</h2>
+        <p class="text-center">Mauris 87</p>
+        <p class="text-center">Los Angeles</p>
+        <p class="text-center">USA</p>
+        <p class="text-center"><i class="fas fa-envelope"></i></p>
+        <h2 class="text-center">E-mail</h2>
+        <p class="text-center">contact@domain.com</p>
+        <p class="text-center">office@domain.com</p>
+        <p class="text-center"><i class="fas fa-headphones-alt"></i></p>
+        <h2 class="text-center">Phone Numbers</h2>
+        <p class="text-center">4324 2344 344 34</p>
+        <p class="text-center">0425 532 533 43</p>
+        <p class="text-center">0234 6423 876</p>
+      </div>
+    </div>
+  </div>
+  <!-- オフィスイメージとコンタクトのための情報と終了 -->
+
+  <!-- 入力フォーム開始 -->
+  <div class="txtform">
+          <h3 class="text-center my-md-4">Contact Us</h3>
+          <form>
+            <div class="container">
+            <div class="row form-group no-gutters">
+              <div class="col-12 col-md-6 mt-4 mt-md-0 p-md-2">
+                <input type="email" class="form-control" placeholder="Your e-mail">
+              </div>
+              <div class="col-12 col-md-6 mt-4 mt-md-0 p-md-2">
+                <input type="text" class="form-control" placeholder="Your name">
+              </div>
+              <div class="col-12 col-md-6 mt-4 mt-md-0 p-md-2">
+                  <input type="text" class="form-control" placeholder="Subject">
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0 p-md-2">
+                  <input type="text" class="form-control" placeholder="Your message">
+                </div>
+                <div class="col-12 mt-4 mt-md-0 p-md-2">
+                  <button type="submit" class="btn btn-warning btn-block">Submit Button</button>
+                </div>
+            </div>
+          </div>
+          </form>
+    </div>
+  <!-- 入力フォーム終了 -->
+  
+<!-- フッター開始 -->
+<div id="footer"></div>
+<!-- フッター終了 -->
+  
+  <!-- jsファイル読み込み -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- jsファイル読み込み終了 -->
+  <!-- 共通パーツの読み込み開始 -->
+<script>
+    $(function(){
+      $("#header").load("./header.html");
+      $("#footer").load("./footer.html");
+    });
+  </script>
+  <!-- 共通パーツの読み込み終了 -->
+</body>
+</html>

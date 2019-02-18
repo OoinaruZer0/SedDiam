@@ -1,0 +1,259 @@
+// 変数の定義開始
+$bpc: 1600px;
+$pc: 1400px;
+$mpc: 1200px;
+$spc: 1000px;
+$sspc: 800px;
+$tab: 767px;
+$sp: 576px;
+// 変数の定義終了
+
+// mixin開始
+
+@mixin bpc {
+  @media (max-width: ($bpc)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin mpc {
+  @media (max-width: ($mpc)) {
+    @content;
+  }
+}
+
+@mixin spc {
+  @media (max-width: ($spc)) {
+    @content;
+  }
+}
+
+@mixin sspc {
+  @media (max-width: ($sspc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+// mixin終了
+
+// 応募を検討するに当たって有益な情報へのリンク開始
+.ap-info-box {
+  background-color: #F8F7F7;
+  padding: 3%;
+
+  @include bpc {
+    padding: 2%;
+  }
+
+  @include tab {
+    padding: 5%;
+  }
+}
+
+.ap-info-heading {
+  margin: 6%;
+  
+  @include bpc {
+    margin: 5%;
+  }
+
+  @include pc {
+    margin: 4%;
+  }
+
+  @include mpc {
+    margin: 7%;
+  }
+
+  @include spc {
+    margin: 5%;
+  }
+
+  @include sspc {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+
+  @include tab {
+    margin: 6%;
+  }
+}
+
+.ap-info-txt {
+  margin: 8%;
+
+  @include bpc {
+    margin: 6%;
+  }
+
+  @include pc {
+    margin: 4%;
+  }
+
+  @include mpc {
+    margin: 8%;
+  }
+
+  @include spc {
+    margin: 5%;
+  }
+
+  @include sspc {
+    margin: 3%;
+  }
+
+  @include tab {
+    margin: 6%;
+  }
+}
+
+.ap-info-btn {
+  border: 1px solid #333333;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #666666;
+  cursor: pointer;
+  width: 150px;
+  height: 60px;
+
+  @include spc {
+    height: 50px;
+  }
+
+  @include tab {
+    height: 60px;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: #333333;
+  }
+}
+// 応募を検討するに当たって有益な情報へのリンク開始
+
+// 申し込む雇用形態の選択ボックス開始
+  .brsp {
+    @include tab {
+      display: none;
+    }
+  }
+
+  h3.crhtxt {
+    font-size: 60px;
+
+    @include tab {
+      font-size: 30px;
+    }
+  }
+
+  .status-box-container {
+    overflow: hidden;
+  }
+
+  .status-box-row {
+    display: block;
+    clear: both;
+
+  }
+
+  .status-box-col {
+    text-align: center;
+    border: 2px solid #c0c0c0;
+    width: 32%;
+    float: left;
+
+    @include tab {
+      float: none;
+      width: 100%;
+    }
+
+    &:nth-of-type(2) {
+      margin-left: 1.5%;
+      margin-right: 1.5%;
+
+      @include tab {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .unit {
+    text-align: right;
+    font-family: 'Old Standard TT', serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .tonelight {
+    color: #d0d0d0;
+  }
+
+  .salary-box {
+    border: 2px solid #c0c0c0;
+    border-radius: 10px;
+    background-color: #e4965a;
+    color: #fff;
+  }
+
+  h4.status-box-heading {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    color: #6c757d;
+  }
+
+  .txtl {
+    font-size: 60px;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
+  }
+
+  .txtm {
+    font-size: 30px;
+  }
+
+  .txts {
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .d-mark {
+    font-size: 40px;
+  }
+
+  .ap-btn {
+    border: 3px solid #e4965a;
+    max-width: 220px;
+    width: 100%;
+    height: 70px;
+    background-color: #e4965a;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+
+    &:hover {
+      background-color: #fff;
+      color: #e4965a;
+    }
+  }
+// 申し込む雇用形態の選択ボックス終了

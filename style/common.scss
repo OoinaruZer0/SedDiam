@@ -1,9 +1,178 @@
-// 全てのページに共通のCSS開始
+// 変数の定義開始
+$tab: 768px;
+$sp: 576px;
+// 変数の定義終了
 
+// mixin開始
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+// mixin終了
+
+// 全てのページに共通のSCSS開始
 body {
   border: 30px solid #fff;
+  font-family: 'Work Sans', sans-serif;
+
+  @include tab {
+    border: 20px solid #fff;
+  }
 }
 
 p {
   -webkit-font-smoothing: antialiased;
+  margin-bottom: 0;
 }
+
+.txts {
+  margin-bottom: 0;
+}
+
+.under-line {
+  background: linear-gradient(transparent 60%, #e1a577 60%);
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+
+// ヘッダーのSCSS開始
+.header-box {
+  background-color: #fff;
+}
+
+.hdlogo {
+  @include tab {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+.hd-list-group {
+  @include tab {
+  max-width: 700px;
+  width: 100%;  
+  }
+}
+
+.header-list {
+  @include tab {
+  border-top: 1px solid #f0f0f0;
+  max-width: 700px;
+  width: 100%;
+  padding: 20px 0;  
+  }
+
+  a {
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(0, -50%);
+        display: block;
+        content: "";
+        width: 0%;
+        height: 6px;
+        background: #efae7c;
+        transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        z-index: -1;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.list-margin-top {
+  @include tab {
+  margin-top: 20px;  
+  }
+}
+
+.navbar {
+  padding: 0;
+}
+
+// ヘッダーのSCSS終了
+
+// ページタイトルとテキストのSCSS開始
+.display-1 {
+  font-weight: 100;
+
+  @include tab {
+    font-size: 40px;
+  }
+}
+
+.pagetitle-description {
+  padding: 170px 0 70px;
+
+  @include tab {
+    padding-top: 100px;
+  }
+
+  @include sp {
+    padding: 70px 0 30px;
+  }
+}
+
+// ページタイトルとテキストのSCSS終了
+
+// フッターのSCSS開始
+.navbar {
+  @include tab {
+  justify-content: center;  
+  }
+}
+
+.blackbackground {
+  background-color: #282828;
+}
+
+.social-icon-color {
+  color: #777;
+}
+
+.information {
+  color: #fff;
+  padding: 56px 20px;
+  border-bottom: 1px solid #696969;
+}
+
+  .information-width {
+    max-width: 71rem;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  i {
+    @include tab {
+    font-size: 40px;  
+    }
+  }
+// フッターのSCSS終了
+// 全てのページに共通のSCSS終了
